@@ -22,13 +22,13 @@ Make sure you have the following installed:
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/milankoce/povio-assignment.git
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd <repository-folder>
+   cd /povio-assignment
    ```
 
 3. Install the dependencies:
