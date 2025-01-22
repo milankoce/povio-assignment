@@ -44,21 +44,13 @@ Make sure you have the following installed:
 To execute the Cypress tests in headless mode:
 
 ```bash
-npx cypress run
+npm run all:e2e:headless
 ```
 
 To execute the tests in the Cypress Test Runner:
 
 ```bash
-npx cypress open
-```
-
-### Generate Reports
-
-After running the tests, the Mochawesome reporter will generate a report in the configured directory. Use the following command to merge and view the report:
-
-```bash
-npx mochawesome-merge && npx mochawesome-report-generator
+npm run cypress
 ```
 
 ## Directory Structure
@@ -73,6 +65,7 @@ project-root/
 ├── reports/                # Mochawesome reports
 ├── cypress.config.js       # Cypress configuration file
 ├── package.json            # Dependencies and scripts
+├── tsconfig.json           # TypeScript configuration file  
 └── README.md               # Project documentation
 ```
 
@@ -80,14 +73,4 @@ project-root/
 
 - **Mochawesome**: After running the tests, a detailed report will be generated in the `reports` folder. The report includes visual and interactive elements to analyze test results.
 
-## Contributing
 
-If you'd like to contribute, please fork the repository and use a feature branch. Pull requests are welcome!
-
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
-
----
-
-Feel free to update the repository as needed. For any issues or feature requests, please open a new issue in the repository.
